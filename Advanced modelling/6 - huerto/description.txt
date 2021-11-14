@@ -1,0 +1,52 @@
+Huerto
+
+Se modela un dominio de un huerto en la que hay agricultores, plantas,
+una regadera, una tienda, una casa, una fuente y varias tierras.
+
+Las acciones que se pueden llevar a cabo son:
+
+comprar-semillas (planta, agricultor, tienda): el agricultor va a la tienda
+para comprar semillas de una planta. Tiene una duración constante.
+
+abonar (agricultor, tierra): el agricultor abona una tierra. No tiene duración.
+
+plantar (planta, agricultor, tierra): el agricultor planta la semilla en la tierra.
+Para ello la tierra tiene que estar libre y abonada y se ha tenido que
+comprar semillas de esa planta. Tiene una duración constante y el granjero gasta
+energía en realizar la acción.
+
+regar (planta, tierra, agricultor, regadera): el agricultor riega la planta 
+con la regadera. El granjero tiene que estar en la tierra en la que esta plantada.
+La regadera tiene que tener el agua necesaria para regar esa planta. Y el granjero
+gasta una energía constante en hacer la acción. La duración depende del agua que
+necesite cada planta.
+
+recoger (planta, tierra, agricultor): el agricultor recoge los frutos de la planta.
+Antes de recoger la planta tiene que haber sido regada. Después de la acción la tierra
+se queda libre. La duración depende del número de frutos que produzca cada planta.
+
+mover (agricultor, localizacion1, localizacion2): el agricultor se mueve desde la
+localización1 a la localización2. La duración depende de la distancia entre esos dos
+puntos y la velocidad del agricultor. La energía que consume el agricultor es igual
+a la distancia que recorre.
+
+descansar (agricultor, casa): el agricultor descansa en la casa. La duración depende
+de la energía que tenga que recargar. La energía tiene que estar por debajo del umbral
+para poder descansar. La energía se rellena al máximo.
+
+rellenar (agricultor, fuente, regadera): el agricultor va a la fuente para llenar la
+regadera. La duración depende del agua que le quede por rellenar. El agua que le queda
+en la regadera tiene que ser menor a un umbral. La regadera queda llenada al máximo.
+
+
+Se modelan dos problemas:
+
+El primero consta de tres plantas (tomates, pimientos y lechuga), una tienda, dos
+tierras, una casa, una fuente, una regadera y un agricultor. El agricultor inicialmente
+está en la casa, las tierras están libres y asignamos números a cada una de las funciones.
+En este caso los objetivos son recoger los tomates en la tierra1, los pimientos en la
+tierra2 y la lechuga en la tierra1.
+
+En el segundo problemas añadimos como plantas melones y fresas y un agricultor más.
+El nuevo agricultor también empieza en la casa. Los objetivos que se añaden son recoger
+los melones y las fresas en la tierra2.

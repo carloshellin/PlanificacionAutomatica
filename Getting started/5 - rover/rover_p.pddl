@@ -1,0 +1,12 @@
+(define (problem rover_p)
+   (:domain rover)
+   (:objects rover1 - rover
+             P0000 P1314 P1234 - location)
+   (:init (at-rover rover1 P0000)
+   )
+   (:goal (and (communicated P0000)
+			   (communicated P1314)
+			   (communicated P1234)
+          )
+   )
+)

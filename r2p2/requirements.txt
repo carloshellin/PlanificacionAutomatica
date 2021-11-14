@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn>=0.9
+scikit-learn
+Pillow
+scipy
+inspyred
+pygame

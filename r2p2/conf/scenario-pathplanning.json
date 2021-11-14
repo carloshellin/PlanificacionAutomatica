@@ -1,0 +1,11 @@
+{
+	"stage": "../res/slide.png",
+	"robot": "../conf/robot.json",
+	"controller": "../conf/controller-pathplanning.json",
+	"gui": true,
+	"algorithm": "Theta*",
+	"heuristic": "naive",
+	"start": [3, 3],
+	"goal": [36, 36],
+	"grid_size": 40
+}
